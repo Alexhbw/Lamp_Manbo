@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z L, r, LIC=R4HV2-908YM-ZERH2-9Q0JX-MP31D-7ZZKG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.41.0.0
+Toolchain Path:  D:\keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\µçÈü\Engineer_hongmenjiang\Engineer\MDK-ARM\Engineer.uvprojx
+Project File Date:  01/11/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'D:\keil_v5\ARM\ARMCC\Bin'
+Build target 'Engineer'
+compiling arm.c...
+..\APPLICATION\arm\arm.h(6): warning:  #1295-D: Deprecated declaration Arm_bsp - give arg types
+  void Arm_bsp();
+..\APPLICATION\arm\arm.h(8): warning:  #1295-D: Deprecated declaration state_control - give arg types
+  void state_control();
+..\APPLICATION\arm\arm.h(9): warning:  #1295-D: Deprecated declaration key_state - give arg types
+  void key_state();
+..\APPLICATION\arm\arm.h(10): warning:  #1295-D: Deprecated declaration armmotorbsp - give arg types
+  void armmotorbsp();
+..\APPLICATION\arm\arm.h(11): warning:  #1295-D: Deprecated declaration Emotion_task - give arg types
+  void Emotion_task();
+..\APPLICATION\arm\arm.h(13): warning:  #1295-D: Deprecated declaration song_task - give arg types
+  void song_task();
+../MODULE/miniPC/miniPC_process.h(122): warning:  #1-D: last line of file ends without a newline
+  #endif // MINIPC_PROCESS_H
+..\MODULE\buzzer\bsp_buzzer.h(4): warning:  #1295-D: Deprecated declaration buzzer_init - give arg types
+  void buzzer_init();
+..\MODULE\buzzer\bsp_buzzer.h(7): warning:  #1295-D: Deprecated declaration buzzer_set_freq - give arg types
+  void buzzer_set_freq();
+..\APPLICATION\arm\arm.c(106): warning:  #188-D: enumerated type mixed with another type
+                  .Improve           = PID_Trapezoid_Intergral | PID_Integral_Limit | PID_Derivative_On_Measurement | PID_DerivativeFilter | PID_ChangingIntegrationRate,
+..\APPLICATION\arm\arm.c(116): warning:  #188-D: enumerated type mixed with another type
+                  .Improve       = PID_Integral_Limit | PID_Derivative_On_Measurement | PID_ChangingIntegrationRate | PID_OutputFilter,
+..\APPLICATION\arm\arm.c(140): warning:  #188-D: enumerated type mixed with another type
+              .close_loop_type       = CURRENT_LOOP|SPEED_LOOP ,
+..\APPLICATION\arm\arm.c(152): warning:  #167-D: argument of type "DJIMotor_Instance **" is incompatible with parameter of type "DJIMotor_Instance *"
+  		DJIMotorReset(&motor_yaw);
+..\APPLICATION\arm\arm.c(202): warning:  #188-D: enumerated type mixed with another type
+          .Improve           = PID_Trapezoid_Intergral | PID_DerivativeFilter | PID_DerivativeFilter | PID_Derivative_On_Measurement | PID_Integral_Limit | PID_Derivative_On_Measurement,
+..\APPLICATION\arm\arm.c(239): warning:  #188-D: enumerated type mixed with another type
+          .Improve           = PID_Trapezoid_Intergral | PID_DerivativeFilter | PID_DerivativeFilter | PID_Derivative_On_Measurement | PID_Integral_Limit | PID_Derivative_On_Measurement,
+..\APPLICATION\arm\arm.c(665): warning:  #1-D: last line of file ends without a newline
+  }
+..\APPLICATION\arm\arm.c(18): warning:  #550-D: variable "state_isinit" was set but never used
+  static int state_isinit = 1;
+..\APPLICATION\arm\arm.c(21): warning:  #177-D: variable "motor_lf" was declared but never referenced
+  static DJIMotor_Instance *motor_lf, *motor_rf, *motor_lb, *motor_rb;                                     // left right forward back
+..\APPLICATION\arm\arm.c(21): warning:  #177-D: variable "motor_rf" was declared but never referenced
+  static DJIMotor_Instance *motor_lf, *motor_rf, *motor_lb, *motor_rb;                                     // left right forward back
+..\APPLICATION\arm\arm.c(21): warning:  #177-D: variable "motor_lb" was declared but never referenced
+  static DJIMotor_Instance *motor_lf, *motor_rf, *motor_lb, *motor_rb;                                     // left right forward back
+..\APPLICATION\arm\arm.c(21): warning:  #177-D: variable "motor_rb" was declared but never referenced
+  static DJIMotor_Instance *motor_lf, *motor_rf, *motor_lb, *motor_rb;                                     // left right forward back
+..\APPLICATION\arm\arm.c(22): warning:  #177-D: variable "motor_steering_lf" was declared but never referenced
+  static DJIMotor_Instance *motor_steering_lf, *motor_steering_rf, *motor_steering_lb, *motor_steering_rb; // 6020ç”µæœº 
+..\APPLICATION\arm\arm.c(22): warning:  #177-D: variable "motor_steering_rf" was declared but never referenced
+  static DJIMotor_Instance *motor_steering_lf, *motor_steering_rf, *motor_steering_lb, *motor_steering_rb; // 6020ç”µæœº 
+..\APPLICATION\arm\arm.c(22): warning:  #177-D: variable "motor_steering_lb" was declared but never referenced
+  static DJIMotor_Instance *motor_steering_lf, *motor_steering_rf, *motor_steering_lb, *motor_steering_rb; // 6020ç”µæœº 
+..\APPLICATION\arm\arm.c(22): warning:  #177-D: variable "motor_steering_rb" was declared but never referenced
+  static DJIMotor_Instance *motor_steering_lf, *motor_steering_rf, *motor_steering_lb, *motor_steering_rb; // 6020ç”µæœº 
+..\APPLICATION\arm\arm.c(32): warning:  #177-D: variable "center_angle_yaw" was declared but never referenced
+  static float center_angle_yaw,center_angle_picth,c_yaw,c_picth = 0;
+..\APPLICATION\arm\arm.c(32): warning:  #177-D: variable "center_angle_picth" was declared but never referenced
+  static float center_angle_yaw,center_angle_picth,c_yaw,c_picth = 0;
+..\APPLICATION\arm\arm.c(34): warning:  #177-D: variable "yaw_angle" was declared but never referenced
+  static float yaw_angle,pitch_angle = 0;
+..\APPLICATION\arm\arm.c(34): warning:  #177-D: variable "pitch_angle" was declared but never referenced
+  static float yaw_angle,pitch_angle = 0;
+..\APPLICATION\arm\arm.c: 29 warnings, 0 errors
+linking...
+Program Size: Code=29020 RO-data=2440 RW-data=768 ZI-data=96024  
+FromELF: creating hex file...
+"Engineer\Engineer.axf" - 0 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil::STM32F4xx_DFP@2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Engineer
+  D:/keil_v5/ARM/Pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/keil_v5/ARM/Pack/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
